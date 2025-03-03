@@ -1,68 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Include external script -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Servin - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
     <script defer src="index.js"></script>
 </head>
-<body class="light-theme">
+<body>
+
 <header>
-    <h1>Portfolio</h1>
+    <h1>Chris Servin</h1>
     <nav>
-        <a href="#projects">Projects</a>
         <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <h3>Housing Price Predictor</h3>
-
-    <!-- Short Description -->
-    <p>This project predicts housing prices using the Housing Price Index (HPI) data combined with Kaggle's location/price data.</p>
-
-    <!-- Technologies Used -->
-
-    <!-- Concepts Used -->
-    <h4>Concepts Used:</h4>
-    <ul>
-        <li>Housing Price Index (HPI) data from FHFA</li>
-        <li>Price/Location data from Kaggle</li>
-        <li>Zip code location determination from city data</li>
-        <li>Machine Learning using Random Forests</li>
-        <li>Data Preprocessing with Python</li>
-        <li>Data Visualization using Plotly</li>
-    </ul>
-    <h4>Technologies Used:</h4>
-    <ul>
-        <li>NumPy</li>
-        <li>Seaborn</li>
-        <li>Matplotlib</li>
-        <li>Pandas</li>
-        <li>Jupyter Notebook</li>
-        <li>Python</li>
-        <li>TensorFlow</li>
-        <li>Plotly</li>
-    </ul>
-</section>
-
+<!-- ABOUT SECTION -->
 <section id="about">
     <h2>About Me</h2>
-    <p>Welcome to my portfolio! I'm a software engineer specializing in web development.</p>
+    <p>Computer Science graduate passionate about data engineering, quantitative trading, and AI-driven solutions.</p>
+
+    <h3>Education</h3>
+    <p><strong>Florida International University</strong> - BS in Computer Science (Sept 2022 - Dec 2024)</p>
+    <ul>
+        <li>Relevant Coursework: Data Structures & Algorithms, Statistics & Probability, AI, Software Engineering</li>
+    </ul>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: myemail@example.com</p>
+<!-- EXPERIENCE SECTION -->
+<section id="experience">
+    <h2>Experience</h2>
+
+    <h3>Internships</h3>
+    <div class="experience-item">
+        <h4>Miami Waterkeeper - Data Engineering Intern (Sep 2024 - Dec 2024)</h4>
+        <ul>
+            <li>Developed ETL pipelines to migrate data from Excel to Azure and Looker.</li>
+            <li>Created visualizations of bacteria heatmap in Looker and Python (Matplotlib).</li>
+            <li>Preprocessed SQL data, optimizing datetime and geolocation handling.</li>
+            <li>Worked in an Agile framework to manage tasks effectively.</li>
+        </ul>
+    </div>
+
+    <h3>Employment</h3>
+    <div class="experience-item">
+        <h4>AmeriCorps Member (Aug 2021 - Aug 2022)</h4>
+        <ul>
+            <li>Facilitated learning for underprivileged students through academic support.</li>
+            <li>Encouraged healthy habits with physical activities and nutritious snacks.</li>
+            <li>Tracked student progress and reported areas for improvement to parents.</li>
+        </ul>
+    </div>
 </section>
 
-<!-- Theme toggle button with a circle inside -->
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Housing Price Predictor</h3>
+        <p>Predicts housing prices using HPI data and ML models.</p>
+        <h4>Technologies Used:</h4>
+        <ul>
+            <li>NumPy, Seaborn, Matplotlib, Pandas</li>
+            <li>Jupyter Notebook, Python, TensorFlow, Plotly</li>
+        </ul>
+        <h4>Concepts:</h4>
+        <ul>
+            <li>HPI data analysis</li>
+            <li>Data preprocessing & visualization</li>
+            <li>Machine Learning with Random Forests</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h3>Stock Market Simulator</h3>
+        <p>Simulates a price-time priority market with real-time data ingestion.</p>
+        <h4>Technologies Used:</h4>
+        <ul>
+            <li>C++, TensorFlow, Streamlit, Matplotlib</li>
+            <li>Ray, Redis, Kafka, NumPy, Pandas</li>
+        </ul>
+        <h4>Concepts:</h4>
+        <ul>
+            <li>Order book simulation</li>
+            <li>Kafka for real-time data streaming</li>
+            <li>LSTM neural network for market predictions</li>
+        </ul>
+    </div>
+
+    <div class="project">
+        <h3>Book Recommender</h3>
+        <p>Uses NLP with HuggingFace to recommend books based on user preferences.</p>
+        <h4>Technologies Used:</h4>
+        <ul>
+            <li>Python, Seaborn, Matplotlib, Gradio</li>
+            <li>HuggingFace, LangChain, Keras</li>
+        </ul>
+        <h4>Concepts:</h4>
+        <ul>
+            <li>NLP-based recommendation system</li>
+            <li>Data processing with Pandas & NumPy</li>
+            <li>Interactive UI with Gradio</li>
+        </ul>
+    </div>
+</section>
+
 <button id="themeToggle" class="theme-toggle">
     <div class="circle"></div>
 </button>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>You can reach out via:</p>
+    <ul>
+        <li><a href="https://github.com/noddle-Cake" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/chris-servin001/" target="_blank">LinkedIn</a></li>
+    </ul>
+
+    <h3>Send me a message:
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSch_GhXRWcLvEsOu6Xi3kolmKH-L5Z10-9vW_15JgNNtE5B2g/viewform?usp=header" target="_blank">Google Forms</a>
+    </h3>
+</section>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Message sent! I'll get back to you soon.");
+    });
+</script>
+
 </body>
 </html>
