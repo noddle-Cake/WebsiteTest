@@ -1,4 +1,26 @@
 /* Base Styles */
+.list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.element {
+    flex: 1 1 calc(50% - 20px); /* Two projects per row */
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+/* Full width for mobile */
+@media (max-width: 768px) {
+    .element {
+        flex: 1 1 100%;
+    }
+}
+
 body {
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
@@ -66,7 +88,61 @@ body.dark-theme section {
     color: #ebdbb2;
 }
 
-/* Theme Toggle Button */
+#themeToggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+#themeToggle:hover {
+    opacity: 0.7;
+}
+
+body.light-theme #themeToggle {
+    background-color: black;
+    color: white;
+}
+
+body.dark-theme #themeToggle {
+    background-color: white;
+    color: black;
+}
+body.dark-theme .element {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+/* Dark Theme Overrides */
+body.dark-theme {
+    background-color: #282828;
+    color: #ebdbb2;
+}
+
+/* Ensure header background and text colors update */
+body.dark-theme header {
+    background: #3c3836;
+    color: #ebdbb2;
+}
+
+/* Override navigation links in header */
+body.dark-theme header a {
+    color: #ebdbb2;
+}
+
+/* Override section backgrounds and text */
+body.dark-theme section {
+    background: #3c3836;
+    color: #ebdbb2;
+}
+
 .theme-toggle {
     position: fixed;
     top: 20px;
