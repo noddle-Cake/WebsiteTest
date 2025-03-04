@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="index.js"></script>
 </head>
-<body>
-
-<header>
+<body class="light-theme">
+<div class="container">
+<header >
     <h1>Chris Servin</h1>
     <nav>
         <a href="#about">About</a>
@@ -18,47 +18,45 @@
         <a href="#contact">Contact</a>
     </nav>
 </header>
+</div>
+<!-- about section -->
+<section id="about" class="centered-section">
+    <h2>about me</h2>
+    <p>computer science graduate passionate about data engineering, machine learning, and ai-driven solutions.</p>
 
-<!-- ABOUT SECTION -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>Computer Science graduate passionate about data engineering, quantitative trading, and AI-driven solutions.</p>
-
-    <h3>Education</h3>
-    <p><strong>Florida International University</strong> - BS in Computer Science (Sept 2022 - Dec 2024)</p>
+    <h3>education</h3>
+    <p><strong>florida international university</strong> - bs in computer science (sept 2022 - dec 2024)</p>
     <ul>
-        <li>Relevant Coursework: Data Structures & Algorithms, Statistics & Probability, AI, Software Engineering</li>
+        <li>relevant coursework: data structures & algorithms, statistics & probability, ai, software engineering</li>
     </ul>
 </section>
 
 <!-- EXPERIENCE SECTION -->
-<section id="experience">
+<section id="experience" class="centered-section">
     <h2>Experience</h2>
     <div class="list-container">
-
-    <div class="element">
-        <h3>Miami Waterkeeper - Data Engineering Intern</h3>
-        <ul>
-            <li>Developed ETL pipelines to migrate data from Excel to Azure and Looker.</li>
-            <li>Created visualizations of bacteria heatmap in Looker and Python (Matplotlib).</li>
-            <li>Preprocessed SQL data, optimizing datetime and geolocation handling.</li>
-            <li>Worked in an Agile framework to manage tasks effectively.</li>
-        </ul>
-    </div>
-
-    <div class="element">
-        <h3>AmeriCorps Member (Aug 2021 - Aug 2022)</h3>
-        <ul>
-            <li>Facilitated learning for underprivileged students through academic support.</li>
-            <li>Encouraged healthy habits with physical activities and nutritious snacks.</li>
-            <li>Tracked student progress and reported areas for improvement to parents.</li>
-        </ul>
-    </div>
+        <div class="element">
+            <h3>Miami Waterkeeper - Data Engineering Intern</h3>
+            <ul>
+                <li>Developed ETL pipelines to migrate data from Excel to Azure and Looker.</li>
+                <li>Created visualizations of bacteria heatmap in Looker and Python (Matplotlib).</li>
+                <li>Preprocessed SQL data, optimizing datetime and geolocation handling.</li>
+                <li>Worked in an Agile framework to manage tasks effectively.</li>
+            </ul>
+        </div>
+        <div class="element">
+            <h3>AmeriCorps Member (Aug 2021 - Aug 2022)</h3>
+            <ul>
+                <li>Facilitated learning for underprivileged students through academic support.</li>
+                <li>Encouraged healthy habits with physical activities and nutritious snacks.</li>
+                <li>Tracked student progress and reported areas for improvement to parents.</li>
+            </ul>
+        </div>
     </div>
 </section>
 
 <!-- PROJECTS SECTION -->
-<section id="projects">
+<section id="projects" class="centered-section">
     <h2>Projects</h2>
     <div class="list-container">
         <div class="element">
@@ -116,6 +114,7 @@
         </div>
     </div>
 </section>
+
 
 <button id="themeToggle">🌙</button>
 
